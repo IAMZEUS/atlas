@@ -68,7 +68,8 @@ a:focus {
         color: #33BCFF; }
 
 #banner {
-  background: url(../img/banner.png) center/cover no-repeat; }
+  background: url(../img/banner.png) center/cover no-repeat;
+  max-height: 420px; }
   #banner .row {
     padding: 150px 0px 200px 0px; }
     #banner .row h1 {
@@ -232,7 +233,7 @@ a:focus {
         margin: 30px 0px 40px 0px; } }
     .content-row p.small-label {
       font-size: 11px;
-      color: #666;
+      color: #484b4f;
       text-transform: uppercase;
       letter-spacing: 1px; }
       @media (min-width: 992px) {
@@ -240,7 +241,7 @@ a:focus {
           margin: 10px 0px; } }
     .content-row p.small {
       font-size: 16px;
-      color: #888;
+      color: #484b4f;
       font-style: italic; }
       @media (min-width: 992px) {
         .content-row p.small {

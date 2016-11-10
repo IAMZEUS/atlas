@@ -121,7 +121,8 @@ a:focus {
 // Sections
 
 #banner {
-	background: url(../img/banner.png) center/cover no-repeat;
+	background: url(../img/banner.png) center/cover no-repeat; max-height: 420px;
+	
 	.row {
 		padding: 150px 0px 200px 0px;
 
@@ -367,7 +368,7 @@ a:focus {
     	
     	&.small-label {
     		font-size: 11px;
-    		color: #666;
+    		color: #484b4f;
     		text-transform: uppercase;
 			letter-spacing: 1px;
 
@@ -378,7 +379,7 @@ a:focus {
 
     	&.small {
     		font-size: 16px;
-    		color: #888;
+    		color: #484b4f;
 			font-style: italic;
 
     		@media (min-width: 992px) {
