@@ -758,7 +758,8 @@ a:focus {
     color: #fff;
     font-size: 17px; }
     #primary-nav li a:hover {
-      color: #33BCFF; }
+      color: #fff;
+      text-decoration: underline; }
   #primary-nav .navbar-brand {
     font-family: "Lato", sans-serif;
     color: #777;
