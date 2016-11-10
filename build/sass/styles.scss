@@ -1,7 +1,7 @@
 // Global variables
 $logo-font: 'Catamaran', sans-serif;
-$content-font: 'Titillium Web', sans-serif;
-$header-font: 'Quicksand', sans-serif;
+$content-font: 'Lato', sans-serif;
+$header-font: 'Lato', sans-serif;
 
 $main-color: #33BCFF;
 $other-blue: #2F95FF;
@@ -16,11 +16,13 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: $header-font;
+	font-family: $header-font; 
+	font-weight: 300;
 }
 
 p, li, a {
 	font-family: $content-font;
+	font-weight: 300;
 }
 
 a:focus {
@@ -103,7 +105,7 @@ a:focus {
 
 		li {
 			a {
-				color: #ccc;
+				color: #666;
 
 				&:hover {
 					color: #33BCFF;
@@ -118,7 +120,7 @@ a:focus {
 // Sections
 
 #banner {
-	background: linear-gradient(rgba(7, 149, 204, 0.8), rgba(7, 149, 204, 0.8)) 0 0/cover, url(../img/banner.png) center/cover no-repeat;
+	background: url(../img/banner.png) center/cover no-repeat;
 	.row {
 		padding: 150px 0px 200px 0px;
 
@@ -173,12 +175,25 @@ a:focus {
 
 #benefits {
 	padding: 100px 0px 20px 0px;
+	border-bottom: 1px solid #ccc;
 	@media (min-width: 767px) {
 		padding: 100px 0px;
 }
 	h2 {
 		margin-bottom: 45px;
+		font-size: 38px;
+		color: #fc2e49;
 	}
+	
+	h3 {
+		font-size: 28px;
+	}
+	
+	li {
+		color: #082B4F;
+	}
+	
+	
 	.col-sm-4 {
 		margin-bottom: 70px;
 
@@ -336,23 +351,24 @@ a:focus {
 	border-bottom: 1px solid #ccc;
 	
 	h3 {
-		color: $other-blue;
+		color: #2F95FF;
 		@media (min-width: 992px) {
 			font-size: 40px;
 		}
 	}
 
 	p {
-		font-size: 25px;
+		font-size: 28px;
+		color: #082B4F;
 		@media (min-width: 992px) {
 			margin: 30px 0px 40px 0px;
 		}
     	
     	&.small-label {
-    		font-size: 13px;
-    		color: #ccc;
+    		font-size: 11px;
+    		color: #666;
     		text-transform: uppercase;
-			letter-spacing: 2px;
+			letter-spacing: 1px;
 
     		@media (min-width: 992px) {
 				margin: 10px 0px;
@@ -360,8 +376,9 @@ a:focus {
     	}
 
     	&.small {
-    		font-size: 17px;
-    		color: #ccc;
+    		font-size: 16px;
+    		color: #888;
+			font-style: italic;
 
     		@media (min-width: 992px) {
 				margin: 5px 0px;
@@ -389,7 +406,7 @@ a:focus {
 	&#content-row-2 {
 			margin-bottom: 0px;
 			img {
-				max-height: 450px;
+				max-height: 500px;
 				float: none;
 			}
 		}

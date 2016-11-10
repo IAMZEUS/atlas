@@ -5,10 +5,12 @@ html, body {
   overflow-x: hidden; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Quicksand", sans-serif; }
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
 
 p, li, a {
-  font-family: "Titillium Web", sans-serif; }
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
 
 a:focus {
   outline: 0; }
@@ -50,7 +52,7 @@ a:focus {
     #primary-nav li a:hover {
       color: #33BCFF; }
   #primary-nav .navbar-brand {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lato", sans-serif;
     color: #777;
     font-weight: bold;
     margin-top: 12px; }
@@ -60,12 +62,12 @@ a:focus {
     #primary-nav.affix .navbar-brand #logo-copy g {
       fill: #000; }
     #primary-nav.affix li a {
-      color: #ccc; }
+      color: #666; }
       #primary-nav.affix li a:hover {
         color: #33BCFF; }
 
 #banner {
-  background: linear-gradient(rgba(7, 149, 204, 0.8), rgba(7, 149, 204, 0.8)) 0 0/cover, url(../img/banner.png) center/cover no-repeat; }
+  background: url(../img/banner.png) center/cover no-repeat; }
   #banner .row {
     padding: 150px 0px 200px 0px; }
     #banner .row h1 {
@@ -105,12 +107,19 @@ a:focus {
           margin: 0px 35px; } }
 
 #benefits {
-  padding: 100px 0px 20px 0px; }
+  padding: 100px 0px 20px 0px;
+  border-bottom: 1px solid #ccc; }
   @media (min-width: 767px) {
     #benefits {
       padding: 100px 0px; } }
   #benefits h2 {
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    font-size: 38px;
+    color: #fc2e49; }
+  #benefits h3 {
+    font-size: 28px; }
+  #benefits li {
+    color: #082B4F; }
   #benefits .col-sm-4 {
     margin-bottom: 70px; }
     @media (min-width: 767px) {
@@ -210,26 +219,28 @@ a:focus {
   margin: 50px 0px;
   border-bottom: 1px solid #ccc; }
   .content-row h3 {
-    color: #2f95ff; }
+    color: #2F95FF; }
     @media (min-width: 992px) {
       .content-row h3 {
         font-size: 40px; } }
   .content-row p {
-    font-size: 25px; }
+    font-size: 28px;
+    color: #082B4F; }
     @media (min-width: 992px) {
       .content-row p {
         margin: 30px 0px 40px 0px; } }
     .content-row p.small-label {
-      font-size: 13px;
-      color: #ccc;
+      font-size: 11px;
+      color: #666;
       text-transform: uppercase;
-      letter-spacing: 2px; }
+      letter-spacing: 1px; }
       @media (min-width: 992px) {
         .content-row p.small-label {
           margin: 10px 0px; } }
     .content-row p.small {
-      font-size: 17px;
-      color: #ccc; }
+      font-size: 16px;
+      color: #888;
+      font-style: italic; }
       @media (min-width: 992px) {
         .content-row p.small {
           margin: 5px 0px; } }
@@ -244,7 +255,7 @@ a:focus {
   .content-row#content-row-2 {
     margin-bottom: 0px; }
     .content-row#content-row-2 img {
-      max-height: 450px;
+      max-height: 500px;
       float: none; }
   .content-row#content-row-3 {
     padding: 0 0 70px 0px;
