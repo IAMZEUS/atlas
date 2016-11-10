@@ -186,7 +186,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1">
-                            <div class="col-sm-6 text-center content-img-wrap">
+                            <div class="col-sm-6 text-center content-img-wrap-desktop">
                                 <img src="img/pay-incent.png" alt="" class="img-responsive">
                             </div>
                             <div class="col-sm-6">
@@ -197,7 +197,9 @@
                                     There's no penalty for not paying a medical bill - without penalties or incentives, patients' don't feel any urgency to pay their bills on time
                                 </p>
                             </div>
-                            
+                            <div class="col-sm-6 text-center content-img-wrap-mobile">
+                                <img src="img/pay-incent.png" alt="" class="img-responsive">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,19 +235,22 @@
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1">
 
-                            <div class="col-sm-6 text-center content-img-wrap">
+                            <div class="col-sm-6 text-center content-img-wrap-desktop">
                                 <img src="img/phone-verified.png" alt="" class="img-responsive">
                             </div>
                             
                             <div class="col-sm-6 text-col">
                                 <h3>Build Patient Trust</h3>
-                                <p>Scanning technology is applied to every bill before it reaches the patient, giving them peace of mind that the bill is verified and ready to be paid</p>
+                                <p>Error scanning technology is applied to every bill - give patients peace of mind that bills are verified and ready to be paid</p>
                                 <p class="small-label">Current Problem</p>
                                 <p class="small">
                                     Medical bills often contain mistakes due to incorrect patient information, insurance coverage issues, and coding complexity - as a result patients are afraid to pay
                                 </p>
                             </div>
-
+							
+                            <div class="col-sm-6 text-center content-img-wrap-mobile">
+                                <img src="img/phone-verified.png" alt="" class="img-responsive">
+                            </div>
                             
                             
                         </div>
@@ -285,7 +290,7 @@
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1">
 
-                            <div class="col-sm-6 text-center content-img-wrap">
+                            <div class="col-sm-6 text-center content-img-wrap-desktop">
                                 <img src="img/phone-lock.png" alt="" class="img-responsive">
                             </div>
                             
@@ -298,6 +303,9 @@
                                 </p>
                             </div>
 
+                            <div class="col-sm-6 text-center content-img-wrap-mobile">
+                                <img src="img/phone-lock.png" alt="" class="img-responsive">
+                            </div>
                             
                             
                         </div>
@@ -393,21 +401,21 @@
                                 <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
                                     <div class="col-xs-12">
                                         <div class="form-group">
-                                            <label for="InputName" class="col-lg-4 control-label">Name</label>
+                                            <!--<label for="InputName" class="col-lg-4 control-label">Name</label>-->
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="first_name" id="first_name"  required>
+                                                <input type="text" class="form-control" name="first_name" id="first_name" value="Name" onfocus="if (this.value=='Name') this.value=''; this.style.color='#000';"/ required>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="InputEmail" class="col-lg-4 control-label">Email</label>
+                                           <!-- <label for="InputEmail" class="col-lg-4 control-label">Email</label> -->
                                             <div class="col-lg-8">
-                                                <input type="email" class="form-control" id="email" name="email"  required  >
+                                                <input type="email" class="form-control" id="email" name="email" value="Email" onfocus="if (this.value=='Email') this.value=''; this.style.color='#000';"/ required>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="InputPhone" class="col-lg-4 control-label">Phone</label>
+                                          <!--  <label for="InputPhone" class="col-lg-4 control-label">Phone</label> -->
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="phone" id="phone" >
+                                                <input type="text" class="form-control" name="phone" id="phone" value="Phone" onfocus="if (this.value=='Phone') this.value=''; this.style.color='#000';"/ required>
                                             </div>
                                         </div>
                                         <!--<div class="form-group">
@@ -423,7 +431,7 @@
                                             </div>
                                         </div> -->
                                         
-                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info">
                                     </div>
                                 </form>
 
@@ -450,49 +458,49 @@
                                 <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
                                     <div class="col-xs-12">
                                         <div class="form-group">
-                                            <label for="InputName" class="col-lg-4 control-label">Name</label>
+                                         <!--   <label for="InputName" class="col-lg-4 control-label">Name</label> -->
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="first_name" id="first_name"  required>
+                                                <input type="text" class="form-control" name="first_name" id="first_name" value="Name" onfocus="if (this.value=='Name') this.value=''; this.style.color='#000';"/ required>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="InputEmail" class="col-lg-4 control-label">Email</label>
+                                        <!--    <label for="InputEmail" class="col-lg-4 control-label">Email</label> -->
                                             <div class="col-lg-8">
-                                                <input type="email" class="form-control" id="email" name="email"  required  >
+                                                <input type="email" class="form-control" id="email" name="email" value="Email" onfocus="if (this.value=='Email') this.value=''; this.style.color='#000';"/ required>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="InputPhone" class="col-lg-4 control-label">Phone</label>
+                                         <!--   <label for="InputPhone" class="col-lg-4 control-label">Phone</label> -->
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="phone" id="phone" >
+                                                <input type="text" class="form-control" name="phone" id="phone" value="Phone" onfocus="if (this.value=='Phone') this.value=''; this.style.color='#000';"/ required>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="InputName" class="col-lg-4 control-label">Organization</label>
+                                         <!--   <label for="InputName" class="col-lg-4 control-label">Organization</label> -->
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="organization" id="organization">
+                                                <input type="text" class="form-control" name="organization" id="organization" value="Organization" onfocus="if (this.value=='Organization') this.value=''; this.style.color='#000';"/ >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="InputRole" class="col-lg-4 control-label">Role</label>
+                                          <!--  <label for="InputRole" class="col-lg-4 control-label">Role</label> -->
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="role" id="role">
+                                                <input type="text" class="form-control" name="role" id="role" value="Role" onfocus="if (this.value=='Role') this.value=''; this.style.color='#000';"/ >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="InputProviders" class="col-lg-4 control-label"># of Providers</label>
+                                         <!--   <label for="InputProviders" class="col-lg-4 control-label"># of Providers</label> -->
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="providers" id="providers">
+                                                <input type="text" class="form-control" name="providers" id="providers" value="# of Providers" onfocus="if (this.name=='providers') this.value=''; this.style.color='#000';"/ >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="InputPatients" class="col-lg-4 control-label"># of Patients</label>
+                                           <!-- <label for="InputPatients" class="col-lg-4 control-label"># of Patients</label> -->
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="patients" id="patients">
+                                                <input type="text" class="form-control" name="patients" id="patients" value="Estimated # of Patients" onfocus="if (this.name=='patients') this.value=''; this.style.color='#000';"/ >
                                             </div>
                                         </div>
                                         
-                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info">
                                     </div>
                                 </form>
 

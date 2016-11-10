@@ -351,19 +351,25 @@ a:focus {
 	padding: 70px 0px 0px 0px;
 	margin: 50px 0px;
 	border-bottom: 1px solid #ccc;
+	.desktop-only {
+		display: none;
+		@media (min-width: 767px) {
+			display: block;
+		}
+	}
 	
 	h3 {
 		color: #2F95FF;
-		@media (min-width: 992px) {
+		@media (min-width: 767px) {
 			font-size: 40px;
 		}
 	}
 
 	p {
-		font-size: 28px;
 		color: #082B4F;
-		@media (min-width: 992px) {
+		@media (min-width: 767px) {
 			margin: 30px 0px 40px 0px;
+			font-size: 28px;
 		}
     	
     	&.small-label {
@@ -371,9 +377,10 @@ a:focus {
     		color: #484b4f;
     		text-transform: uppercase;
 			letter-spacing: 1px;
-
-    		@media (min-width: 992px) {
+			display: none;
+    		@media (min-width: 767px) {
 				margin: 10px 0px;
+				display: block;
 			}
     	}
 
@@ -381,19 +388,43 @@ a:focus {
     		font-size: 16px;
     		color: #484b4f;
 			font-style: italic;
-
-    		@media (min-width: 992px) {
+			display: none;
+    		@media (min-width: 767px) {
 				margin: 5px 0px;
+				display: block;
 			}
     	}
 
 
 	}
+	
 	.content-img-wrap {
 		img {
-			display: inline-block;
 			max-height: 450px;
-			float: right
+			float: right;
+			display: inline-block;
+		}
+	}
+	
+	.content-img-wrap-desktop {
+		img {
+			display: none;
+			max-height: 450px;
+			float: right;
+    		@media (min-width: 767px) {
+				display: inline-block;
+			}
+		}
+	}
+	
+	.content-img-wrap-mobile {
+		img {
+			display: none;
+			max-height: 450px;
+			float: right;
+    		@media (max-width: 767px) {
+				display: inline-block;
+			}
 		}
 	}
 
@@ -552,10 +583,17 @@ form {
 
 	.form-control {
 		max-width: 350px;
+		color: #888;
+		text-align: center;
 	}
 
 	#submit {
-		margin-right: 10px;
+	float:right;
+	margin-right: 10px
+	@media (min-width: 768px) {
+		margin-left: 10px;
+		margin-right:0;
+		float:none;
 	}
 
 
