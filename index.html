@@ -387,142 +387,129 @@
           </div>
         </footer>
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title text-center">We will contact you shortly</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="containter">
-                            <div class="row">
-                                <form class="form-horizontal" name="commentform" method="post" action="send_contact_form_email.php">
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <!--<label for="InputName" class="col-lg-4 control-label">Name</label>-->
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="name" id="name" value="Name" onfocus="if (this.value=='Name') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                           <!-- <label for="InputEmail" class="col-lg-4 control-label">Email</label> -->
-                                            <div class="col-lg-8">
-                                                <input type="email" class="form-control" id="email" name="email" value="Email" onfocus="if (this.value=='Email') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                          <!--  <label for="InputPhone" class="col-lg-4 control-label">Phone</label> -->
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="phone" id="phone" value="Phone" onfocus="if (this.value=='Phone') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        <!--<div class="form-group">
-                                            <label for="InputName" class="col-lg-4 control-label">Organization</label>
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="organization" id="organization">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="InputRole" class="col-lg-4 control-label">Role</label>
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="role" id="role">
-                                            </div>
-                                        </div> -->
+		<!-- Modal -->
+		        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		          <div class="modal-dialog" role="document">
+		            <div class="modal-content">
+		                    <div class="modal-header">
+		                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		                        <h4 class="modal-title text-center">We will contact you shortly</h4>
+		                    </div>
+		                    <div class="modal-body">
+		                        <div class="containter">
+		                            <div class="row">
+		                                <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+		                                    <div class="col-xs-12">
+		                                        <div class="form-group">
+		                                            <label for="InputName" class="col-lg-4 control-label">Name</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="text" class="form-control" name="first_name" id="first_name"  required>
+		                                            </div>
+		                                        </div>
+		                                        <div class="form-group">
+		                                            <label for="InputEmail" class="col-lg-4 control-label">Email</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="email" class="form-control" id="email" name="email"  required  >
+		                                            </div>
+		                                        </div>
+		                                        <div class="form-group">
+		                                            <label for="InputPhone" class="col-lg-4 control-label">Phone</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="text" class="form-control" name="phone" id="phone" >
+		                                            </div>
+		                                        </div>
+                                     
+		                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+		                                    </div>
+		                                </form>
+
+		                            </div>
+
+		                        </div>
+		                    </div><!-- End of Modal body -->
+		                </div><!-- End of Modal content -->
+		          </div>
+		        </div>
+
+		        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		          <div class="modal-dialog" role="document">
+		            <div class="modal-content">
+		                    <div class="modal-header">
+		                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		                        <h4 class="modal-title text-center"><b>Demo Request</b></h4><br>
+		                        <p> Interested in learning how Atlas can enable and motivate my patients to pay their medical bills?</p>
+		                    </div>
+		                    <div class="modal-body">
+		                        <div class="containter">
+		                            <div class="row">
+		                                <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+		                                    <div class="col-xs-12">
+		                                        <div class="form-group">
+		                                            <label for="InputName" class="col-lg-4 control-label">Name</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="text" class="form-control" name="first_name" id="first_name"  required>
+		                                            </div>
+		                                        </div>
+		                                        <div class="form-group">
+		                                            <label for="InputEmail" class="col-lg-4 control-label">Email</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="email" class="form-control" id="email" name="email"  required  >
+		                                            </div>
+		                                        </div>
+		                                        <div class="form-group">
+		                                            <label for="InputPhone" class="col-lg-4 control-label">Phone</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="text" class="form-control" name="phone" id="phone" >
+		                                            </div>
+		                                        </div>
+		                                        <div class="form-group">
+		                                            <label for="InputName" class="col-lg-4 control-label">Organization</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="text" class="form-control" name="organization" id="organization">
+		                                            </div>
+		                                        </div>
+		                                        <div class="form-group">
+		                                            <label for="InputRole" class="col-lg-4 control-label">Role</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="text" class="form-control" name="role" id="role">
+		                                            </div>
+		                                        </div>
+		                                        <div class="form-group">
+		                                            <label for="InputProviders" class="col-lg-4 control-label"># of Providers</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="text" class="form-control" name="providers" id="providers">
+		                                            </div>
+		                                        </div>
+		                                        <div class="form-group">
+		                                            <label for="InputPatients" class="col-lg-4 control-label"># of Patients</label>
+		                                            <div class="col-lg-8">
+		                                                <input type="text" class="form-control" name="patients" id="patients">
+		                                            </div>
+		                                        </div>
                                         
-                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info">
-                                    </div>
-                                </form>
+		                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+		                                    </div>
+		                                </form>
 
-                            </div>
+		                            </div>
 
-                        </div>
-                    </div><!-- End of Modal body -->
-                </div><!-- End of Modal content -->
-          </div>
-        </div>
+		                        </div>
+		                    </div><!-- End of Modal body -->
+		                </div><!-- End of Modal content -->
 
-        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title text-center"><b>Demo Request</b></h4><br>
-                        <p> Interested in learning how Atlas can enable and motivate my patients to pay their medical bills?
-</p>
-                    </div>
-                    <div class="modal-body">
-                        <div class="containter">
-                            <div class="row">
-                                <form class="form-horizontal" name="commentform" method="post" action="send_demo_form_email.php">
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                         <!--   <label for="InputName" class="col-lg-4 control-label">Name</label> -->
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="name" id="name" value="Name" onfocus="if (this.value=='Name') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                        <!--    <label for="InputEmail" class="col-lg-4 control-label">Email</label> -->
-                                            <div class="col-lg-8">
-                                                <input type="email" class="form-control" id="email" name="email" value="Email" onfocus="if (this.value=='Email') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                         <!--   <label for="InputPhone" class="col-lg-4 control-label">Phone</label> -->
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="phone" id="phone" value="Phone" onfocus="if (this.value=='Phone') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                         <!--   <label for="InputName" class="col-lg-4 control-label">Organization</label> -->
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="organization" id="organization" value="Organization" onfocus="if (this.value=='Organization') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                          <!--  <label for="InputRole" class="col-lg-4 control-label">Role</label> -->
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="role" id="role" value="Role" onfocus="if (this.value=='Role') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                         <!--   <label for="InputProviders" class="col-lg-4 control-label"># of Providers</label> -->
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="providers" id="providers" value="# of Providers" onfocus="if (this.name=='providers') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                           <!-- <label for="InputPatients" class="col-lg-4 control-label"># of Patients</label> -->
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" name="patients" id="patients" value="Estimated # of Patients" onfocus="if (this.name=='patients') this.value=''; this.style.color='#000';"/ required>
-                                            </div>
-                                        </div>
-                                        
-                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info">
-                                    </div>
-                                </form>
-
-                            </div>
-
-                        </div>
-                    </div><!-- End of Modal body -->
-                </div><!-- End of Modal content -->
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+		        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+		        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+		        <script src="js/plugins.js"></script>
+		        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
-</html>
+		        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+		        <script>
+		            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+		            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+		        </script>
+		        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+		    </body>
+		</html>
