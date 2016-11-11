@@ -374,9 +374,8 @@ form {
   text-align: center; }
   form .form-control {
     max-width: 350px;
-    color: #888; }
-  form #submit {
-    margin-left: 10px; }
+    color: #888;
+    text-align: center; }
   form input {
     min-width: 200px;
     max-width: 200px;
