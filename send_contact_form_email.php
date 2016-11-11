@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "ethand85@gmail.com";
-    $email_subject = "Atlas Form Submission";
+    $email_subject = "Atlas Contact Form Submission";
  
 
  

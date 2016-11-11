@@ -2,15 +2,18 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "ethand85@gmail.com";
-    $email_subject = "Atlas Form Submission";
- 
-
+    $email_to = "ethan@paywithatlas.com";
+    $email_subject = "Atlas Demo Form Submission";
  
     // validation expected data exists
     if(!isset($_POST['name']) ||        
-        !isset($_POST['email'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+        !isset($_POST['email']) ||        
+        !isset($_POST['phone']) ||        
+        !isset($_POST['organization']) ||        
+        !isset($_POST['role']) ||        
+        !isset($_POST['providers']) ||        
+        !isset($_POST['patients'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted. Please try filling in all fields');       
     }
  
     $name_from = $_POST['name']; // required
@@ -32,12 +35,10 @@ if(isset($_POST['email'])) {
     $error_message .= 'The Name you entered does not appear to be valid.<br />';
   }
 
-  // if(strlen($comments) < 2) {
-  //   $error_message .= 'The Comments you entered do not appear to be valid.<br />';
-  // }
   if(strlen($error_message) > 0) {
     died($error_message);
   }
+  
     $email_message = "Form details below.\n\n";
  
     function clean_string($string) {
