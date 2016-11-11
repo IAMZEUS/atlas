@@ -47,8 +47,8 @@ if(isset($_POST['email'])) {
     $email_message .= "First Name: ".clean_string($first_name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";   
     $email_message .= "Phone: ".clean_string($phone_from)."\n";
-    $email_message .= "Organization: ".clean_string($organization)."\n";
-    $email_message .= "Role: ".clean_string($role)."\n";
+    $email_message .= "Organization: ".clean_string($organization_from)."\n";
+    $email_message .= "Role: ".clean_string($role_from)."\n";
 	$email_message .= "Providers: ".clean_string($providers_from)."\n";
 	$email_message .= "Patients: ".clean_string($patients_from)."\n";
  
