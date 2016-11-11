@@ -69,7 +69,7 @@ a:focus {
 
 #banner {
   background: url(../img/banner.png) center/cover no-repeat;
-  max-height: 420px; }
+  max-height: 480px; }
   #banner .row {
     padding: 150px 0px 200px 0px; }
     #banner .row h1 {
@@ -378,6 +378,8 @@ form {
     min-width: 200px;
     max-width: 200px;
     display: inline-block !important; }
+  form #submit {
+    margin-right: 10px; }
   form .blue-btn {
     padding: 0px 35px;
     min-width: 0px; }
